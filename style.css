@@ -1,18 +1,4 @@
-body {
-}
-
-/* Style the header */
-header {
-  background-color: #fff;
-  padding: 20px;
-}
-
-section {
-
-}
-
 .topnav {
-  /* overflow: hidden; */
   background-color: #000;
 }
 
@@ -34,30 +20,101 @@ section {
 }
 
 #picture {
-  background: url('https://raw.githubusercontent.com/Vi-N-Tran/Vitran.me/gh-pages/images/pic2.jpg');
+  background: url('https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/pic2.jpg?raw=true');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 600px;
+
 }
 
-#pictureText{
+#whitebox{
+  display: flex;
   background: white;
   opacity: 70%;
-  height: 500px;
-  width: 50%;
+  height: 100%;
+  width: 48%;
+  justify-content: center;
+  align-items: center;
 }
 
-.yellowBox{
-  width: 440;
-  height: 700;
+#whitebox > div{
+  text-align: center;
+  align-items: center;
+}
+
+#whitebox > p{
+  text-align: center;
+}
+
+#whitebox > h1{
+  text-align: center;
+}
+
+.main{
+  background-color: white;
+}
+
+.row{
+  height = 400px;
+}
+
+.yellowCard{
+  width: 400px;
+  height: 600px;
   background-color: #FFEBBE;
+  border-radius: 25px;
 }
 
+.imageCard{
+  width: auto;
+  height: 700;
+  background-color: blue;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+
+}
+
+/* Style the header */
+header {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+section {
+
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light 300;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;
+}
+
+h2{
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
 /* Style the footer */
 footer {
   background-color: black;
   padding: 10px;
   text-align: center;
   color: white;
+  height: 4000px;
 }
