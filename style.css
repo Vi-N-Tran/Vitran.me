@@ -56,20 +56,30 @@
 }
 
 .row{
-  height = 400px;
+  height = 500px;
+  width: auto;
+  display: grid;
+  padding: 30px;
+  margin-bottom: 50px;
 }
 
 .yellowCard{
-  width: 400px;
-  height: 600px;
+  grid-column: 1;
+  width: 1000px;
+  height: 500px;
   background-color: #FFEBBE;
-  border-radius: 25px;
+  border-radius: 20px;
+  transform: translate(120px,0px);
 }
 
 .imageCard{
-  width: auto;
-  height: 700;
+  grid-column: 1;
+  position: absolute;
+  width: 1000px;
+  height: 500px;
   background-color: blue;
+  border-radius: 20px;
+  transform: translate(150px,-30px);
 }
 
 .centered{
@@ -107,14 +117,14 @@ h1 {
 }
 
 h2{
+  text-align: center;
   font-size: 30px;
   font-family: 'Open Sans', sans-serif;
+  padding-top: 20px;
 }
 /* Style the footer */
 footer {
-  background-color: black;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  height: 4000px;
+  background-color: #585858;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
