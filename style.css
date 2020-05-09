@@ -1,0 +1,48 @@
+body {
+  ###
+}
+
+/* Style the header */
+header {
+  background-color: #fff;
+  padding: 20px;
+}
+
+section {
+
+}
+
+.landing {
+  background: url(https://raw.githubusercontent.com/Vi-N-Tran/Vitran.me/gh-pages/images/pic2.jpg);
+  padding: 270px;
+}
+
+.topnav {
+  /* overflow: hidden; */
+  background-color: #FFF;
+}
+
+.topnav a {
+  float: right;
+  color: #363636;
+  padding: 0px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+  color: #FFEBBE;
+}
+
+.topnav a.active {
+  color: #F6C044;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
