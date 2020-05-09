@@ -1,5 +1,4 @@
 body {
-  ###
 }
 
 /* Style the header */
@@ -12,14 +11,9 @@ section {
 
 }
 
-.landing {
-  background: url(https://raw.githubusercontent.com/Vi-N-Tran/Vitran.me/gh-pages/images/pic2.jpg);
-  padding: 270px;
-}
-
 .topnav {
   /* overflow: hidden; */
-  background-color: #FFF;
+  background-color: #000;
 }
 
 .topnav a {
@@ -39,9 +33,30 @@ section {
   color: #F6C044;
 }
 
+#picture {
+  background: url('https://raw.githubusercontent.com/Vi-N-Tran/Vitran.me/gh-pages/images/pic2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+}
+
+#pictureText{
+  background: white;
+  opacity: 70%;
+  height: 500px;
+  width: 50%;
+}
+
+.yellowBox{
+  width: 440;
+  height: 700;
+  background-color: #FFEBBE;
+}
+
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: black;
   padding: 10px;
   text-align: center;
   color: white;
