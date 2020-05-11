@@ -1,7 +1,5 @@
 .topnav {
   background-color: #000;
-  float: right;
-  width: 70%;
 }
 
 .topnav a {
@@ -118,7 +116,7 @@ h1 {
   font-style: bold;
 }
 
-h1::before{
+/* h1::before{
   content: "";
   display: block;
   width: 600px;
@@ -139,12 +137,8 @@ h1::after{
   right = 0;
   top: 50%;
   z-index = -2;
-}
-
-/* span{
-  background: white;
-  opacity: 70%;
 } */
+
 
 h2{
   text-align: center;
@@ -154,7 +148,7 @@ h2{
 }
 /* Style the footer */
 footer {
-  background-color: green;
+  background-color: #585858;
   padding-top: 10px;
   padding-bottom: 60px;
 }
