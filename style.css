@@ -1,0 +1,160 @@
+.topnav {
+  background-color: #000;
+  float: right;
+  width: 70%;
+}
+
+.topnav a {
+  float: right;
+  color: #363636;
+  padding: 0px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+  color: #FFEBBE;
+}
+
+.topnav a.active {
+  color: #F6C044;
+}
+
+#picture {
+  background: url('https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/pic2.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+
+}
+
+#whitebox{
+  display: flex;
+  background: white;
+  opacity: 70%;
+  height: 100%;
+  width: 48%;
+  justify-content: center;
+  align-items: center;
+}
+
+#whitebox > div{
+  text-align: center;
+  align-items: center;
+}
+
+#whitebox > p{
+  text-align: center;
+}
+
+#whitebox > h1{
+  text-align: center;
+}
+
+.main{
+  background-color: white;
+}
+
+.row{
+  height = 500px;
+  width: auto;
+  display: grid;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.yellowCard{
+  grid-column: 1;
+  width: 1000px;
+  height: 500px;
+  background-color: #FFEBBE;
+  border-radius: 20px;
+  transform: translate(120px,0px);
+}
+
+.imageCard{
+  grid-column: 1;
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  background-color: blue;
+  border-radius: 20px;
+  transform: translate(150px,-30px);
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+
+}
+
+/* Style the header */
+header {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+section {
+
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light 300;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;
+}
+
+h1::before{
+  content: "";
+  display: block;
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  left = 0;
+  top: 50%;
+  z-index = -2;
+  background: white;
+}
+
+h1::after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 200px;
+  position: absolute;
+  right = 0;
+  top: 50%;
+  z-index = -2;
+}
+
+/* span{
+  background: white;
+  opacity: 70%;
+} */
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 20px;
+}
+/* Style the footer */
+footer {
+  background-color: green;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
