@@ -105,11 +105,20 @@
 }
 
 .row{
-  height = 500px;
-  width: auto;
-  display: grid;
-  padding: 30px;
-  margin-bottom: 50px;
+  display: flex;
+  height = auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
 
 .yellowCard{
@@ -122,10 +131,12 @@
 }
 
 .imageCard{
-  grid-column: 1;
-  position: absolute;
-  transform: translate(300px,-30px);
+  align-self: center;
   border-radius: 10px;
+  padding: 10px;
+  width: 550px;
+  height: 400px;
+  align-self: right;
 }
 
 .imageCard:hover{
