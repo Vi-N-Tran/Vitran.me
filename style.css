@@ -38,17 +38,66 @@
   align-items: center;
 }
 
-#whitebox > div{
-  text-align: center;
-  align-items: center;
+.name{
+  font-size: 60px;
+  font-weight: 400;
 }
 
-#whitebox > p{
-  text-align: center;
+.name:before {
+  content: "Vi Tran";
+  animation: myName 6s infinite;
 }
 
-#whitebox > h1{
-  text-align: center;
+@keyframes myName {
+  20% {
+    content: "Vi Tran";
+    color: #F6C044;
+  }
+  40%{
+    content: "Student";
+    color: #F6C044;
+  }
+  60%{
+    content: "Developer";
+    color: #F6C044;
+  }
+  80%{
+    content: "Music lover";
+    color: #F6C044;
+  }
+  100%{
+    content: "Dreamer";
+    color: #F6C044;
+  }
+}
+
+.beforeName{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light 300;
+}
+
+.beforeName:before {
+  content: "I'm";
+  animation: beforeMyName 6s infinite;
+}
+
+@keyframes beforeMyName {
+  20% {
+    content: "I'm"
+  }
+  40%{
+    content: "I'm a"
+  }
+  60%{
+    content: "I'm a"
+  }
+  80%{
+    content: "I'm a"
+  }
+  100%{
+    content: "I'm a"
+  }
 }
 
 .main{
@@ -69,32 +118,28 @@
   height: 400px;
   background-color: #FFEBBE;
   border-radius: 10px;
-  transform: translate(240px,0px);
+  transform: translate(270px,0px);
 }
 
 .imageCard{
   grid-column: 1;
   position: absolute;
-  transform: translate(270px,-30px);
+  transform: translate(300px,-30px);
+  border-radius: 10px;
 }
 
-.social-icons {
+.imageCard:hover{
+  box-shadow: -20px 15px 35px 0px rgba(0,0,0,.1);
+}
+
+.socialIcons {
     display: flex;
     justify-content: center;
     list-style: none;
 }
-.social-icons li {
+.socialIcons li {
     margin: 15px;
-}
-
-.contact{
-  background-color: #585858;
-}
-
-.centered{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    transform: translate(-20px, 0px);
 }
 
 body {
@@ -117,12 +162,7 @@ p{
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: light 300;
-}
-
-h1 {
-  font-size: 60px;
-  font-family: 'Montserrat', sans-serif;
-  font-style: bold;
+  text-align: center;
 }
 
 
