@@ -11,19 +11,31 @@
     <link rel="stylesheet" href ="style.css">
   </head>
 
-  <body>
-    <header class="sticky">
-          <img class="logo" src="https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/logo.png?raw=true" style="width: 170px; height: 55px;"/>
-        <div class="topnav">
-          <a href="#dali">DALI</a>
-          <a id = "contacts" href="#contact">Contact</a>
-          <a id = "project" href="#projects">Projects</a>
-          <a class="active" href="#home">Home</a>
-        </div>
+<!-- Make nav keep active state as a different color -->
+  <script>
+       $(function() {
+          $('#topnav li a').click(function() {
+             $('#topnav li').removeClass();
+             $($(this).attr('href')).addClass('active');
+          });
+       });
+  </script>
 
+  <body>
+    <!-- Make nav bar with logo and make header sticky -->
+    <header class="sticky">
+          <img class="logo" src="https://github.com/Vi-N-Tran/Vitran.me/blob/master/images/logo.png?raw=true" style="width: 170px; height: 55px;"/>
+        <div class="topnav" id="topnav">
+          <li id = "homes"><a href="#home">Home</a>
+          <li id = "project"><a href="#projects">Projects</a>
+          <li id = "about"><a href="#about">About</a>
+          <li id = "contacts"><a href="#contact">Contact</a>
+        </div>
     </header>
 
-    <div id = "picture">
+    <!-- Landing page -->
+    <div id ="home" style="height:0.05px;"></div>
+    <div class = "picture">
       <div id = "whitebox">
         <div>
           <p><span class="beforeName"></span></p>
@@ -31,10 +43,12 @@
         </div>
       </div>
     </div>
-    <h2 id ="projects">
+    <div id ="projects" style="height:18px;"></div>
+    <h2 style="margin-bottom:50px;">
       I'm working on ...
     </h2>
 
+    <!-- Project page -->
     <div class="column">
       <div class = "leftRow">
         <div class = "card roundLeftCard" style="background: #5bd288">
@@ -53,6 +67,7 @@
         </div>
       </div>
     </div>
+
 
     </div>
       <div class = "rightRow">
@@ -73,6 +88,7 @@
     </div>
 
 
+    <!-- Footer/Contact page -->
     <div class="container">
       <footer>
         <h2 id = "contact" style = "color: #FFEBBE; padding-bottom:  0px">Let's connect!</h2></h>
