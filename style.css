@@ -104,11 +104,21 @@
   background-color: white;
 }
 
-.row{
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  justify-content: center;
+.column{
+display: flex;
+flex-direction: column;
+}
+
+.leftRow{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+}
+
+.rightRow{
+display:flex;
+flex-direction:row;
+justify-content: flex-end;
 }
 
 .row:after {
@@ -117,27 +127,20 @@
   clear: both;
 }
 
-.column{
-  padding: 10px;
-  justify-content: center;
-}
-
-.yellowCard{
+/* .yellowCard{
   grid-column: 1;
   width: 800px;
   height: 400px;
   background-color: #FFEBBE;
   border-radius: 10px;
   transform: translate(270px,0px);
-}
+} */
 
 .imageCard{
-  align-self: center;
   border-radius: 10px;
   padding: 10px;
   width: 550px;
   height: 400px;
-  align-self: right;
 }
 
 .imageCard:hover{
