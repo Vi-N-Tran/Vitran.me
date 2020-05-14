@@ -25,6 +25,7 @@
   background-attachment: fixed;
   background-size: cover;
   height: 600px;
+  margin-bottom: 50px;
 
 }
 
@@ -113,12 +114,14 @@ flex-direction: column;
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
+padding-bottom: 30px;
 }
 
 .rightRow{
 display:flex;
 flex-direction:row;
 justify-content: flex-end;
+padding-bottom: 30px;
 }
 
 .row:after {
@@ -127,24 +130,35 @@ justify-content: flex-end;
   clear: both;
 }
 
-/* .yellowCard{
-  grid-column: 1;
-  width: 800px;
-  height: 400px;
-  background-color: #FFEBBE;
-  border-radius: 10px;
-  transform: translate(270px,0px);
-} */
-
-.imageCard{
-  border-radius: 10px;
-  padding: 10px;
-  width: 550px;
-  height: 400px;
+.card{
+  width: 1000px;
+  height: 500px;
 }
 
-.imageCard:hover{
+.card:hover{
   box-shadow: -20px 15px 35px 0px rgba(0,0,0,.1);
+}
+
+.roundLeftCard{
+  border-radius: 0px 4px 4px 0px;
+}
+
+.roundRightCard{
+  border-radius: 4px 0px 0px 4px;
+}
+
+.cardRow{
+display: flex;
+flex-direction: row;
+justify-content: center;
+height: auto;
+}
+.cardColumn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 50%;
+padding: 10px;
 }
 
 .socialIcons {
@@ -185,8 +199,7 @@ h2{
   text-align: center;
   font-size: 30px;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding: 20px;
 }
 /* Style the footer */
 footer {
