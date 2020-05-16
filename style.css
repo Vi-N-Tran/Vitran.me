@@ -16,7 +16,7 @@
   padding: 5px 15px;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Muli', sans-serif;
   display: block;
 }
 
@@ -60,7 +60,7 @@
 
 .beforeName{
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: light 300;
 }
 
@@ -222,7 +222,7 @@ padding-bottom: 30px;
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 /* Style the header */
@@ -234,13 +234,13 @@ header {
 
 p{
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: light 300;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
   text-align: center;
 }
 
 h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 60px;
   font-weight: bolder;
   text-align: center;
@@ -249,8 +249,9 @@ h1{
 h2{
   text-align: center;
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   margin: 30px;
+  font-weight: 200;
 }
 /* Style the footer */
 footer {
