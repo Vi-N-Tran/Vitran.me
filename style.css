@@ -1,3 +1,70 @@
+.loader_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #FFFDF7;
+}
+.loader{
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+animation: voiceWave 1s ease-in-out 2;
+border-radius: 10px;
+display: inline-block;
+margin: 5px 5px;
+width: 3px;
+height: 40px;
+}
+
+@keyframes voiceWave {
+0% {
+  transform: scale(1);
+}
+50%{
+  transform: scale(2);
+}
+100%{
+  transform: scale(1);
+}
+}
+
+.box:nth-child(1) {
+background: #e40304;
+}
+
+.box:nth-child(2) {
+animation-delay: 90ms;
+background: #ff8c02;
+}
+
+.box:nth-child(3) {
+animation-delay: 180ms;
+background: #ffed00;
+}
+
+.box:nth-child(4) {
+animation-delay: 270ms;
+background: #008026;
+}
+
+.box:nth-child(5) {
+animation-delay: 360ms;
+background: #004dff;
+}
+
+.box:nth-child(6) {
+animation-delay: 450ms;
+background: #750887;
+}
+
 .logo{
   position: absolute;
   margin-left: 10px;
@@ -6,7 +73,7 @@
 .topnav {
   display: flex;
   float: right;
-  background-color: #fff;
+  background-color: #FFFDF7;
   padding-top: 20px;
   width: 35%;
 }
@@ -16,7 +83,7 @@
   padding: 5px 15px;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Muli', sans-serif;
   display: block;
 }
 
@@ -30,6 +97,10 @@
 
 .topnav li{
   list-style: none;
+}
+
+.topnav .icon {
+  display: none;
 }
 
 .sticky {
@@ -60,7 +131,7 @@
 
 .beforeName{
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: light 300;
 }
 
@@ -222,25 +293,25 @@ padding-bottom: 30px;
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 /* Style the header */
 header {
-  background-color: #fff;
+  background-color: #FFFDF7;
   z-index: 2;
   height: 90px;
 }
 
 p{
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: light 300;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
   text-align: center;
 }
 
 h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 60px;
   font-weight: bolder;
   text-align: center;
@@ -249,8 +320,16 @@ h1{
 h2{
   text-align: center;
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   margin: 30px;
+  font-weight: 200;
+}
+
+h3{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 500;
 }
 /* Style the footer */
 footer {
