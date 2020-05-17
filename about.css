@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #FFFDF7;
+}
+.info_box{
+  width: 700px;
+  height: auto;
+}
