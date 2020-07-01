@@ -1,0 +1,347 @@
+#content{
+
+}
+
+.loader_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #FFFDF7;
+}
+.loader{
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+animation: voiceWave 1s ease-in-out 2;
+border-radius: 10px;
+display: inline-block;
+margin: 5px 5px;
+width: 3px;
+height: 40px;
+}
+
+@keyframes voiceWave {
+0% {
+  transform: scale(1);
+}
+50%{
+  transform: scale(2);
+}
+100%{
+  transform: scale(1);
+}
+}
+
+.box:nth-child(1) {
+background: #e40304;
+}
+
+.box:nth-child(2) {
+animation-delay: 90ms;
+background: #ff8c02;
+}
+
+.box:nth-child(3) {
+animation-delay: 180ms;
+background: #ffed00;
+}
+
+.box:nth-child(4) {
+animation-delay: 270ms;
+background: #008026;
+}
+
+.box:nth-child(5) {
+animation-delay: 360ms;
+background: #004dff;
+}
+
+.box:nth-child(6) {
+animation-delay: 450ms;
+background: #750887;
+}
+
+.logo{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.topnav {
+  display: flex;
+  float: right;
+  background-color: #FFFDF7;
+  padding-top: 20px;
+  width: 35%;
+}
+
+.topnav a {
+  color: #363636;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Muli', sans-serif;
+  display: block;
+}
+
+.topnav a:hover {
+  color: #FFEBBE;
+}
+
+.topnav #topnav> .active > a {
+    color: #F6C044;
+}
+
+.topnav li{
+  list-style: none;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.picture {
+  position: relative;
+  background: url('https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/pic2.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin-top: 100px;
+}
+
+#whitebox{
+  display: flex;
+  background: white;
+  opacity: 70%;
+  height: 100%;
+  width: 48%;
+  justify-content: center;
+  align-items: center;
+}
+
+.beforeName{
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  font-weight: light 300;
+}
+
+.beforeName:before {
+  content: "I'm";
+  animation: beforeMyName 6s infinite;
+}
+
+@keyframes beforeMyName {
+  20% {
+    content: "I'm"
+  }
+  40%{
+    content: "I'm a"
+  }
+  60%{
+    content: "I'm a"
+  }
+  80%{
+    content: "I'm a"
+  }
+  100%{
+    content: "I'm a"
+  }
+}
+
+.name{
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.name:before {
+  content: "Vi Tran";
+  animation: myName 6s infinite;
+}
+
+@keyframes myName {
+  20% {
+    content: "Vi Tran";
+    color: #F6C044;
+  }
+  40%{
+    content: "Student";
+    color: #F6C044;
+  }
+  60%{
+    content: "Developer";
+    color: #F6C044;
+  }
+  80%{
+    content: "Music lover";
+    color: #F6C044;
+  }
+  100%{
+    content: "Dreamer";
+    color: #F6C044;
+  }
+}
+
+.main{
+  background-color: white;
+}
+
+.column{
+display: flex;
+flex-direction: column;
+}
+
+.leftRow{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+padding-bottom: 30px;
+}
+
+.rightRow{
+display:flex;
+flex-direction:row;
+justify-content: flex-end;
+padding-bottom: 30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card{
+  width: 1100px;
+  height: 500px;
+  margin-top: 30px;
+  transition: .3s ease-in;
+}
+
+.card:hover{
+  box-shadow: -20px 15px 35px 0px rgba(0,0,0,.2);
+  transform: scale(1.01);
+}
+
+.roundLeftCard{
+  border-radius: 0px 4px 4px 0px;
+}
+
+.roundRightCard{
+  border-radius: 4px 0px 0px 4px;
+}
+
+.cardRow{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.smallCardColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 45%;
+  padding: 0 10px 0 0;
+  height: 100%;
+}
+
+.descriptionBox{
+  margin-left: 30px;
+}
+
+.bigCardColumn {
+  width: 55%;
+  padding: 0 10px 0 0;
+  height: 100%;
+}
+
+.image{
+  width: 470px;
+  height: 260px;
+  margin-top: 130px;
+  margin-left: 80px;
+  position: relative;
+}
+
+.iphone{
+  width:220px;
+  height:460px;
+  position: absolute;
+  transform:translate(70px,-50px);
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.socialIcons li {
+    margin: 15px;
+    transform: translate(-20px, 0px);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+  background-color: #FFFDF7;
+}
+
+/* Style the header */
+header {
+  background-color: #FFFDF7;
+  z-index: 2;
+  height: 90px;
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Muli', sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Muli', sans-serif;
+  margin: 30px;
+  font-weight: 200;
+}
+
+h3{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 500;
+}
+/* Style the footer */
+footer {
+  background-color: #363636;
+  padding-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
