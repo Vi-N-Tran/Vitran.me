@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vitran.me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/c5f0688fbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href ="style.css">
+  </head>
+
+  <body>
+    <!-- Make nav bar with logo and make header sticky -->
+    <div onload="myFunction()">
+      <script>
+        var myVar;
+
+        function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+        document.getElementById("content").style.display = "none";
+        document.getElementById("my_loader").style.display = "block";
+        }
+      </script>
+
+      <header class="sticky">
+            <img class="logo" src="https://github.com/Vi-N-Tran/Vitran.me/blob/master/images/logo.png?raw=true" style="width: 170px; height: 55px;"/>
+          <div class="topnav" id="topnav">
+            <li id = "homes"><a href="#home">Home</a>
+            <li id = "project"><a href="#projects">Projects</a>
+            <li id = "about"><a href="about.html">About</a>
+            <li id = "contacts"><a href="#contact">Contact</a>
+          </div>
+      </header>
+        <!-- Make nav keep active state as a different color -->
+          <!-- <script>
+               $(function() {
+                  $('#topnav li a').click(function() {
+                     $('#topnav li').removeClass();
+                     $($(this).attr('href')).addClass('active');
+                  });
+               });
+          </script>
+      </header>
+
+      <!Landing page -->
+      <div id ="home" style="height:0.05px;"></div>
+      <div class = "picture">
+        <div id = "whitebox">
+          <div>
+            <p><span class="beforeName"></span></p>
+            <h1><span class = "name"></span></h1>
+          </div>
+        </div>
+      </div>
+      <div id ="projects" style="height:18px;"></div>
+      <h2 style="margin-bottom:50px;">
+        I'm working on ...
+      </h2>
+
+      <!-- Project page -->
+      <div class="column">
+        <div class = "leftRow">
+          <div class = "card roundLeftCard" style="background: #5bd288">
+            <div class = "cardRow">
+              <div class = "bigCardColumn">
+                <img src="https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/fineance_phone.png?raw=true" class="iphone" />
+                <img src="https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/fineance_laptop.png?raw=true" class="image" style="margin-top: 200px; margin-left: 180px;"/>
+              </div>
+              <div class = "smallCardColumn">
+                <div>
+                  <h1>Fineance</h1>
+                  <p>An easier and more convenient way for college students to manage their finances</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "rightRow">
+          <div class = "card roundRightCard" style="background: #E7E3D8">
+            <div class = "cardRow">
+              <div class = "smallCardColumn">
+                <div class = "descriptionBox">
+                  <h1>Pandemic Simulation</h1>
+                  <p>A Simulation for the COVID-19 pandemic spread within the United States </p>
+                </div>
+              </div>
+              <div class = "bigCardColumn">
+                <img src="https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/Pandemic_laptop.png?raw=true" class ="image"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer/Contact page -->
+      <div class="container">
+        <footer>
+            <hr />
+            <h2 id = "contact" style = "color: #FFEBBE; margin: 0px">Let's connect!</h2>
+            <p style="font-size:15px; color:#FFEBBE; margin: 0px">I'm trying to meet two new people every week. Help me reach my goal :)</p>
+          <section>
+            <ul class = "socialIcons" style="margin:0px" >
+              <span style="color: #FFEBBE">
+                <li><a href="mailto:Vi.n.tran.23@dartmouth.edu"><i class="fas fa-envelope fa-2x"></i></a></li>
+              </span>
+              <span style="color: #FFEBBE">
+                <li><a href="https://github.com/Vi-N-Tran"><i class="fab fa-github fa-2x"></i></a></li>
+              </span>
+              <span style="color: #FFEBBE">
+                <li><a href="https://www.linkedin.com/in/vi-n-tran/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              </span>
+            </ul>
+          </section>
+        </footer>
+      </div>
+    </div>
+
+    <!-- <div class="loader_wrapper" id="loader_animate">
+      <div class="loader" id="my_loader">
+        <div class="wave">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <h3 style="color: #363636">Welcome...</h>
+      </div>
+    </div> -->
+
+  </body>
+</html>
