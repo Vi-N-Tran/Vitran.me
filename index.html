@@ -13,14 +13,14 @@
   <body>
     <div class="header-wrapper">
       <header>
-        <img class="logo" alt="logo image" src="./images/logo.png"/>
+        <img class="logo" alt="logo image" src="logos/logo.png"/>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav for="nav-toggle">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a id="resume rounded" href="#">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a id="resume rounded" class="teal" href="data/Vi Tran.pdf">Resume</a></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -30,6 +30,7 @@
       </header>
     </div>
 
+    <div id="home"></div>
     <div class="landing">
       <div class="left-landing">
         <section>
@@ -59,7 +60,7 @@
           </div>
           <div class="landing-card gradient front flipped rounded" >
           </div>
-          <img class="picture" alt="Vi's profile picture" src="images/about_picture.jpg"/>
+          <img class="picture" alt="Vi's profile picture" src="images/main-pic.jpg"/>
       </div>
     </div>
 
@@ -68,31 +69,31 @@
       <div class="skills-cards">
         <div class="skills-outter-card gradient">
           <div class="skills-inner-card white">
-            <img class="skills-logo" alt="Python" src="images/python.png"/>
+            <img class="skills-logo" alt="Python" src="logos/python.png"/>
             <p class="smallest">Python</p>
           </div>
         </div>
         <div class="skills-outter-card gradient flipped">
           <div class="skills-inner-card white flipped">
-            <img class="skills-logo" alt="HTML/CSS" src="images/html-css.png"/>
+            <img class="skills-logo" alt="HTML/CSS" src="logos/html-css.png"/>
             <p class="smallest">HTML/CSS</p>
           </div>
         </div>
         <div class="skills-outter-card gradient">
           <div class="skills-inner-card white">
-            <img class="skills-logo" alt="React" src="images/react.png"/>
+            <img class="skills-logo" alt="React" src="logos/react.png"/>
             <p class="smallest">React</p>
           </div>
         </div>
         <div class="skills-outter-card gradient flipped">
           <div class="skills-inner-card white flipped">
-            <img class="skills-logo" alt="Java" src="images/java.png"/>
+            <img class="skills-logo" alt="Java" src="logos/java.png"/>
             <p class="smallest">Java</p>
           </div>
         </div>
         <div class="skills-outter-card gradient">
           <div class="skills-inner-card white">
-            <img class="skills-logo" style="width: 50%;"alt="Figma" src="images/figma.png"/>
+            <img class="skills-logo" style="width: 50%;"alt="Figma" src="logos/figma.png"/>
             <p class="smallest">Figma</p>
           </div>
         </div>
@@ -100,7 +101,8 @@
       <hr/>
     </div>
 
-    <div class="portfolio">
+    <div id="portfolio"></div>
+    <div id="portfolio"class="portfolio">
       <h1>Portfolio</h1>
       <div class="row">
         <div class="portfolio-left">
@@ -182,40 +184,45 @@
         <h1 style="line-height:160px; margin-top: 0;">Pretty neat right?</h1>
       </div>
       <div class="end-right">
-        <div class="end-outter-card gradient">
-          <div class="end-inner-card white">
-            <div class="end-img" style="background-image: url(images/contact-me.png);">
-              <div class="end-button peach">
-                <p>Contact me</p>
+        <a href="mailto:Vi.n.tran.23@dartmouth.edu" class="black">
+          <div class="end-outter-card gradient">
+            <div class="end-inner-card white">
+              <div class="end-img" style="background-image: url(images/contact-me.png);">
+                <div class="end-button peach">
+                  <p>Contact me</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="end-outter-card gradient">
-          <div class="end-inner-card white">
-            <div class="end-img" style="background-image: url(images/see-resume.png);">
-              <div class="end-button peach">
-                <p>See resume</p>
+        </a>
+        <a href="data/Vi Tran.pdf" class="black">
+          <div class="end-outter-card gradient">
+            <div class="end-inner-card white">
+              <div class="end-img" style="background-image: url(images/see-resume.png);">
+                <div class="end-button peach">
+                  <p>See resume</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
-    <hr style="width: 80%;">
+    <hr style="width: 100%;"/>
 
-    <div class="footer-container"></div>
+    <div class="footer-container">
       <div class="footer">
         <p class="smallest black">Designed and developed by yours truly </p>
         <ul class="footer-ul">
-          <li class="footer-li"><a class="smallest black">Linked in</a></li>
-          <li class="footer-li"><a class="smallest black" >Github</a></li>
-          <li class="footer-li"><a class="smallest black">Email</a></li>
-          <li class="footer-li"><a class="smallest black">About</a></li>
+          <li class="footer-li"><a class="smallest black" href="https://www.linkedin.com/in/vi-n-tran/">Linked in</a></li>
+          <li class="footer-li"><a class="smallest black" href="https://github.com/Vi-N-Tran">Github</a></li>
+          <li class="footer-li"><a class="smallest black" href="mailto:Vi.n.tran.23@dartmouth.edu">Email</a></li>
+          <li class="footer-li"><a class="smallest black" href="about.html">About</a></li>
         </ul>
       </div>
     </div>
+
 
 
   
