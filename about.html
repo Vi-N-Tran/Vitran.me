@@ -4,63 +4,85 @@
     <title>About</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/c5f0688fbf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href ="style.css">
     <link rel="stylesheet" href = "about.css">
   </head>
 
   <body>
-    <header class="sticky">
-        <img class="logo" src="https://github.com/Vi-N-Tran/Vitran.me/blob/master/images/logo.png?raw=true" style="width: 170px; height: 55px;"/>
-        <div class="topnav" id="topnav">
-          <li id = "homes"><a href="index.html#home">Home</a>
-          <li id = "project"><a href="index.html#projects">Projects</a>
-          <li id = "about"><a href="#about">About</a>
-          <li id = "contacts"><a href="index.html#contact">Contact</a>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class = "info_box">
-            <img src="https://github.com/Vi-N-Tran/Vitran.me/blob/gh-pages/images/smaller_about.jpg?raw=true" style="width:700px; height:800"/>
-            <h3 style ="text-align: left; margin: 0px; margin-top: 10px">Hello!</h>
-            <p class="text";>I am pursuing Computer Science and Economics as a first year at Dartmouth College.
-            I'm an enthusiatic person who enjoys learning, and teaching Computer Science. Currently, I'm collaborating with a group
-            of talented women to build a finance management app for college students, at DALI lab. As a personal project, I am working
-            with my mentor from my previous internship to program a simulation for the COVID-19 pandemic. On campus, I am heavily involved
-            in the Women in computer Science club, and Varsity Badminton(before COVID). I am also working as a teaching assistant for Introduction
-            to Programming and Problem Solving via Object-oriented Programming courses, as well as tutoring for Introduction to Statistics course.
-            </p>
-            <hr />
-            <h4>I've worked with</h>
-            <p class="text">Dali Lab, Resonym, SLAC National Accelerator Laboratory, Stanford Universtity </p>
-            <hr />
-            <h4>Want to know more about me?</h>
-            <p class="text"><a href="mailto:Vi.n.tran.23@dartmouth.edu?, &subject=Request%20Resume&body=Hi Vi, I am __(name)__ from ___(association)___. I would like to see your resume because ___(reason)__">Ask for my Resume!</a></p>
-
-            <hr />
-            <p style="font-size:20px;">Let's talk!</p>
-            <p style="font-size:15px">I'm trying to meet two new people every week. Help me reach my goal :)</p>
-            <section>
-              <ul class = "socialIcons">
-                <span style="color: #FFEBBE">
-                  <li><a href="mailto:Vi.n.tran.23@dartmouth.edu"><i class="fas fa-envelope fa-2x"></i></a></li>
-                </span>
-                <span style="color: #FFEBBE">
-                  <li><a href="https://github.com/Vi-N-Tran"><i class="fab fa-github fa-2x"></i></a></li>
-                </span>
-                <span style="color: #FFEBBE">
-                  <li><a href="https://www.linkedin.com/in/vi-n-tran/"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                </span>
+    <div class="header-wrapper">
+        <header style="background-color: white;">
+          <img class="logo" alt="logo image" src="./logos/logo.png"/>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle">
+          <nav style="background-color: white;" for="nav-toggle">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a id="resume rounded" class="teal" href="data/Vi Tran.pdf">Resume</a></li>
               </ul>
-            </section>
-        </div>
+          </nav>
+          <label for="nav-toggle" class="nav-toggle-label">
+              <p style="margin-right:15px ;">Menu</p>
+              <span></span>
+          </label>
+        </header>
     </div>
 
+    <div class="body">
+        <div class="container-row">
+            <div class="left">
+                <img class="self" alt="Vi's picture" src="images/about.png">
+            </div>
+            <div class="right">
+                <h4><span class="blue-text">I'm glad</span><span class="light-grey-text"> to meet</span><span class="peach-text"> you</span></h4>
+            </div>
+        </div>
 
+        <div class="container-column">
+            <h5>Who am I?</h5>
+            <p class="grey-text">My name is Vi Tran. I am a 2nd year pursuing Computer Science and Economics at Dartmouth College. As an inquisitive and enthusiastic person, I hope to contribute my curiosity and energy towards learning and solving technological and financial problems. I am also striving to become an entrepreneur who will bring positive change to my community.
+                Currently, I'm collaborating with a group of talented women to build a finance management website and app for college students. I also work as a teaching assistant and tutor for CS and Math courses
+                I find learning new skills, meeting new people, and discovering new matcha latte cafes to be the best way to spend my free time.</p>
+            <p class="grey-text">Currently, I'm collaborating with a group of talented women to build a finance management website and app for college students. I also work as a teaching assistant and tutor for CS and Math courses.</p>
+            <p class="grey-text">I find learning new skills, meeting new people, and discovering new matcha latte cafes to be the best way to spend my free time.</p>
+            <hr class="about-hr"/>
+            <h5>I've worked at:</h5>
+        </div>
+
+        <div class="container-column" style="margin-top: 0; height: 250px;">
+            <div class="about-row">
+                <div class="card">
+                    <img class="card-img round" alt="Dali Lab" src="logos/dali.png"/>
+                </div>
+                <div class="card">
+                    <img class="card-img square" alt="SLAC" src="logos/slac.png"/>
+                </div>
+                <div class="card">
+                    <img class="card-img square" alt="Stanford" src="logos/stanford.png"/>
+                </div>
+                <div class="card">
+                    <img class="card-img round" alt="Resonym" src="logos/resonym-logo.png"/>
+                </div>
+            </div>
+            <hr class="about-hr" style="margin-bottom: 20px;"/>
+            <p>👋 This doesn’t have to be a goodbye.</p>
+            <p>I’m consistently <span style="color: #2C6B80; font-weight: 900;"> looking for projects</span>  to work on so contact me to chat!</p>
+        </div>
+    
+        <hr class="about-hr"/>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer">
+          <p class="smallest black">Designed and developed by yours truly </p>
+          <ul class="footer-ul">
+            <li class="footer-li"><a class="smallest black" href="https://www.linkedin.com/in/vi-n-tran/">Linked in</a></li>
+            <li class="footer-li"><a class="smallest black" href="https://github.com/Vi-N-Tran">Github</a></li>
+            <li class="footer-li"><a class="smallest black" href="mailto:Vi.n.tran.23@dartmouth.edu">Email</a></li>
+            <li class="footer-li"><a class="smallest black" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
