@@ -732,19 +732,23 @@ hr{
 
   .end-left{
     width: 100%;
-    height: 30%;
+    height: 40%;
     justify-content: center;
   }
 
   .end-right{
     width: 100%;
-    height: 70%;
+    height: 60%;
     flex-direction: row;
   }
 
   .end-outter-card{
-    height: 100%;
+    height: 70%;
     margin: 20px;
+  }
+
+  .end-text{
+    font-size: 10px;
   }
 
   .hide{
@@ -763,6 +767,10 @@ hr{
 
   .lh{
     line-height: 100px;
+  }
+
+  .end-img{
+    background-image: white;
   }
 }
 
