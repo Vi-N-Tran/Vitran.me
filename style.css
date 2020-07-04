@@ -323,7 +323,7 @@ section{
   margin: 0px;
 }
 
-.portfolio-card:hover{
+.hover:hover{
   transform: translate(0, -5px);
   transition-duration: 0.5s;
 }
