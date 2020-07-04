@@ -720,11 +720,11 @@ hr{
 
   /* Small projects */
   .proj{
-    height: 400px;
+    height: 500px;
   }
 
   .proj-row{
-    height: 40%;
+    height: 50%;
   }
 
   .proj-card{
