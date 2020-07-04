@@ -14,7 +14,7 @@
     <div class="header-wrapper">
       <header>
         <img class="logo" alt="logo image" src="logos/logo.png"/>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
         <nav for="nav-toggle">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -67,34 +67,38 @@
     <div class="skills">
       <h1>My Skills</h1>
       <div class="skills-cards">
-        <div class="skills-outter-card gradient">
-          <div class="skills-inner-card white">
-            <img class="skills-logo" alt="Python" src="logos/python.png"/>
-            <p class="smallest">Python</p>
+        <div  class="skills-3-cards">
+          <div class="skills-outter-card gradient">
+            <div class="skills-inner-card white">
+              <img class="skills-logo" alt="Python" src="logos/python.png"/>
+              <p class="smallest">Python</p>
+            </div>
+          </div>
+          <div class="skills-outter-card gradient flipped">
+            <div class="skills-inner-card white flipped">
+              <img class="skills-logo" alt="HTML/CSS" src="logos/html-css.png"/>
+              <p class="smallest">HTML/CSS</p>
+            </div>
+          </div>
+          <div class="skills-outter-card gradient">
+            <div class="skills-inner-card white">
+              <img class="skills-logo" alt="React" src="logos/react.png"/>
+              <p class="smallest">React</p>
+            </div>
           </div>
         </div>
-        <div class="skills-outter-card gradient flipped">
-          <div class="skills-inner-card white flipped">
-            <img class="skills-logo" alt="HTML/CSS" src="logos/html-css.png"/>
-            <p class="smallest">HTML/CSS</p>
+        <div  class="skills-3-cards">
+          <div class="skills-outter-card gradient flipped">
+            <div class="skills-inner-card white flipped">
+              <img class="skills-logo" alt="Java" src="logos/java.png"/>
+              <p class="smallest">Java</p>
+            </div>
           </div>
-        </div>
-        <div class="skills-outter-card gradient">
-          <div class="skills-inner-card white">
-            <img class="skills-logo" alt="React" src="logos/react.png"/>
-            <p class="smallest">React</p>
-          </div>
-        </div>
-        <div class="skills-outter-card gradient flipped">
-          <div class="skills-inner-card white flipped">
-            <img class="skills-logo" alt="Java" src="logos/java.png"/>
-            <p class="smallest">Java</p>
-          </div>
-        </div>
-        <div class="skills-outter-card gradient">
-          <div class="skills-inner-card white">
-            <img class="skills-logo" style="width: 50%;"alt="Figma" src="logos/figma.png"/>
-            <p class="smallest">Figma</p>
+          <div class="skills-outter-card gradient">
+            <div class="skills-inner-card white">
+              <img class="skills-logo" style="width: 50%;"alt="Figma" src="logos/figma.png"/>
+              <p class="smallest">Figma</p>
+            </div>
           </div>
         </div>
       </div>
@@ -106,28 +110,31 @@
       <h1>Portfolio</h1>
       <div class="row">
         <div class="portfolio-left">
-          <div class="portfolio-card green rounded">
-            <img class="portfolio-img" alt="Fineance project picture"src="images/fineance-tilted.png"/>
-            <div class="portfolio-des">
-              <h3 class="black">Fine-ance</h3>
-              <p class="smallest"><span class="teal">Design and Develop </span>- an easier and more convenient way for college students to manage their finances.</p>
-            </div>
-            <div class="pill-box">
-              <div class="pill pill-color centered">
-                <p class="pill-text">Figma</p>
+          <a class="black" href="wip.html">
+            <div class="portfolio-card green rounded">
+              <img class="portfolio-img" alt="Fineance project picture"src="images/fineance-tilted.png"/>
+              <div class="portfolio-des">
+                <h3 class="black">Fine-ance</h3>
+                <p class="smallest"><span class="teal">Design and Develop </span>- an easier and more convenient way for college students to manage their finances.</p>
               </div>
-              <div class="pill pill-color centered">
-                <p class="pill-text">React</p>
+              <div class="pill-box">
+                <div class="pill pill-color centered">
+                  <p class="pill-text">Figma</p>
+                </div>
+                <div class="pill pill-color centered">
+                  <p class="pill-text">React</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="portfolio-right">
-          <div class="portfolio-card pink rounded">
+          <a class="black" href="https://docs.google.com/document/d/1a_AqvBepJbLKP05eSSFh7e664XTxqL7FtCQL583yHlc/edit?usp=sharing">
+            <div class="portfolio-card pink rounded">
               <img class="portfolio-img" alt="Fineance project picture"src="images/mama.png"/>
               <div class="portfolio-des">
                 <h3 class="black">Mama</h3>
-                <p class="smallest"><span class="teal">Design </span>- help facilitate effortless connection between new mothers, doctors and other parents, while giving them access to credible sources.</p>
+                <p class="smallest"><span class="teal">Design </span>- help facilitate effortless connection between new mothers and doctors, while giving them access to credible sources.</p>
               </div>
               <div class="pill-box">
                 <div class="pill pill-color centered">
@@ -141,13 +148,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
     <div class="proj">
-      <h1 style="line-height:150px; margin-top:100px">Little fun projects</h1>
+      <h1 class="lh">Little fun projects</h1>
       <div class="proj-row">
         <div class="proj-card" style="background-image: url(images/defund.png);">
           <div style="margin: 10px;">
@@ -181,11 +188,11 @@
 
     <div class="end">
       <div class="end-left">
-        <h1 style="line-height:160px; margin-top: 0;">Pretty neat right?</h1>
+        <h1 class="lh" style="margin-top: 0;"><span class="hide">Pretty </span>Neat Right?</h1>
       </div>
       <div class="end-right">
-        <a href="mailto:Vi.n.tran.23@dartmouth.edu" class="black">
-          <div class="end-outter-card gradient">
+        <div class="end-outter-card gradient">
+          <a href="mailto:Vi.n.tran.23@dartmouth.edu" class="black end-a-card">
             <div class="end-inner-card white">
               <div class="end-img" style="background-image: url(images/contact-me.png);">
                 <div class="end-button peach">
@@ -193,10 +200,10 @@
                 </div>
               </div>
             </div>
-          </div>
-        </a>
-        <a href="data/Vi Tran.pdf" class="black">
-          <div class="end-outter-card gradient">
+          </a>
+        </div>
+        <div class="end-outter-card gradient">
+          <a href="data/Vi Tran.pdf" class="black end-a-card">
             <div class="end-inner-card white">
               <div class="end-img" style="background-image: url(images/see-resume.png);">
                 <div class="end-button peach">
@@ -204,8 +211,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -213,12 +220,12 @@
 
     <div class="footer-container">
       <div class="footer">
-        <p class="smallest black">Designed and developed by yours truly </p>
+        <p class="smallest grey hide">Designed and developed by yours truly </p>
         <ul class="footer-ul">
-          <li class="footer-li"><a class="smallest black" href="https://www.linkedin.com/in/vi-n-tran/">Linked in</a></li>
-          <li class="footer-li"><a class="smallest black" href="https://github.com/Vi-N-Tran">Github</a></li>
-          <li class="footer-li"><a class="smallest black" href="mailto:Vi.n.tran.23@dartmouth.edu">Email</a></li>
-          <li class="footer-li"><a class="smallest black" href="about.html">About</a></li>
+          <li class="footer-li" style="margin-left:0"><a class="smallest grey" href="https://www.linkedin.com/in/vi-n-tran/">Linked in</a></li>
+          <li class="footer-li"><a class="smallest grey" href="https://github.com/Vi-N-Tran">Github</a></li>
+          <li class="footer-li"><a class="smallest grey" href="mailto:Vi.n.tran.23@dartmouth.edu">Email</a></li>
+          <li class="footer-li"><a class="smallest grey" href="about.html">About</a></li>
         </ul>
       </div>
     </div>

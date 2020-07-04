@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href = "about.css">
+    <style>
+        .wip-container{
+            display: flex;
+            align-items: center;
+        }
+        .wip-img{
+            width: 100%;
+            height: auto;
+        }
+        .wip-left{
+            width: 50%;
+            left:0;
+        }
+        .wip-right{
+            width: 50%;
+            right:0;
+        }
+        .space{
+            height: 82px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="header-wrapper">
+        <header style="background-color: white;">
+          <img class="logo" alt="logo image" src="./logos/logo.png"/>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle">
+          <nav style="background-color: white;" for="nav-toggle">
+              <ul style="background-color: white;">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html#portfolio">Portfolio</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a id="resume rounded" class="teal" href="data/Vi Tran.pdf">Resume</a></li>
+              </ul>
+          </nav>
+          <label for="nav-toggle" class="nav-toggle-label">
+              <p style="margin-right:15px ;">Menu</p>
+              <span></span>
+          </label>
+        </header>
+    </div>
+
+    <div class="space"></div>
+    <div class="wip-container">
+        <div class="wip-left">
+            <img class="wip-img" alt="Work in progress" src="images/wip.png">
+        </div>
+        <div class="wip-right">
+            <h4 class="peach-text" style="margin-bottom: 20px;">Work in progress</h4>
+            <h4 class="blue-text"  style="margin-top: 20px;">Come back later !</h4>
+        </div>
+    </div>
+  </body>
+</html>
