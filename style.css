@@ -293,7 +293,7 @@ section{
   display: flex;
   flex-direction: row;
   width: 95%;
-  height: 800px;
+  height: auto;
   transform: translate(0px, -4.5rem);
   margin-bottom: 10px;
 }
@@ -392,6 +392,13 @@ section{
   height: 10%;
   top: 80%;
   background-color: none;
+}
+
+.proj-a{
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  
 }
 
 .end{
