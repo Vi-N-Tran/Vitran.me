@@ -717,10 +717,22 @@ hr{
   }
 
 
+
   /* Small projects */
+  .proj{
+    height: 400px;
+  }
+
+  .proj-row{
+    height: 40%;
+  }
+
   .proj-card{
     width: 40%;
+    height: 100%;
   }
+
+
 
   /* Contacts */
   .end{
