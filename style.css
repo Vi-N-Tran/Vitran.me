@@ -34,6 +34,7 @@ header{
 /* Header */
 .header-wrapper{
   height: 82px;
+  width: 100%;
 }
 
 .logo{
@@ -248,7 +249,7 @@ section{
   transform: translate(0px, -4rem);
 }
 
-.skills-3-cards{
+.skills-2-cards{
   display: flex;
 }
 
@@ -259,7 +260,7 @@ section{
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin: 2rem;
+  margin: 1rem;
   margin-top: 0;
 }
 
@@ -292,7 +293,7 @@ section{
   display: flex;
   flex-direction: row;
   width: 95%;
-  height: 620px;
+  height: 800px;
   transform: translate(0px, -4.5rem);
   margin-bottom: 10px;
 }
@@ -317,8 +318,8 @@ section{
   flex-direction: column;
   align-items: center;
   text-align: left;
-  height: 100%;
-  width: 90%;
+  height: auto;
+  width: 100%;
   margin: 0px;
 }
 
@@ -339,11 +340,16 @@ section{
   margin-top: 10px;
 }
 
+.porfolio-a{
+  width: 90%;
+}
+
 .pill-box{
   display: flex;
   height: 7%;
   width: 90%;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .pill{
@@ -356,7 +362,7 @@ section{
 
 /* Little fun projects */
 .proj{
-  height: 812px;
+  height: 600px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -398,7 +404,6 @@ section{
   display: flex;
   text-align: center;
   width: 60%;
-  margin-left: 50px;
 }
 
 .end-right{
@@ -662,19 +667,19 @@ hr{
   }
 
   h1{
-    font-size:100px;
+    font-size:80px;
   }
 
   .skills-cards{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(0px, -2rem);
+    transform: translate(0px, 0rem);
   }
 
   .row{
     height: 100%;
-    transform: translate(0px, -2rem);
+    transform: translate(0px, 0rem);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -700,10 +705,13 @@ hr{
     margin-bottom: 20px;
   }
 
+
+  /* Small projects */
   .proj-card{
     width: 40%;
   }
 
+  /* Contacts */
   .end{
     height: 400px;
     width: 100%;
@@ -748,6 +756,3 @@ hr{
 }
 
 
-/* 
-
-*/
