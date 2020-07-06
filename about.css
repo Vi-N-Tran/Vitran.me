@@ -1,3 +1,22 @@
+/* *********
+  TOC:
+    1. Defaults
+    2. General containers
+    3. Picture and greeting
+    4. Work
+    5. Footer
+    6. Fonts
+    7. Text colors
+    8. Transformation
+  ************/
+
+
+
+
+
+/* *********
+    1. Defaults
+  ************/
 .body{
     display: flex;
     flex-direction: column;
@@ -7,7 +26,13 @@
     height: auto;
 }
 
-/* General */
+
+
+
+
+/* *********
+    2. General containers
+  ************/
 .container-row{
     display: flex;
     justify-content: center;
@@ -20,8 +45,25 @@
     width: 80%;
     margin-top: 30px;
 }
+@media screen and (max-width: 1000px){
 
-/* picture and greeting */
+
+    .container-column{
+        height: auto;
+    }
+
+    .container-row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* *********
+    3. Picture and greeting
+  ************/
 .left{
     width: 70%;
     margin-left: 50px;
@@ -32,8 +74,24 @@
     margin-right: 50px;
     text-align: center;
 }
+@media screen and (max-width: 1000px){
+    .left{
+        margin-left: 0;
+        width: 50%;
+    }
 
-/*  */
+    .right{
+        width: 50%;
+    }
+}
+
+
+
+
+
+/* *********
+    4. Work
+  ************/
 .work-row{
     display: flex;
     flex-direction: row;
@@ -55,17 +113,38 @@
 .card-img{
     height: 100px;
 }
+@media screen and (max-width: 1000px){
+    .work-row{
+        flex-direction: column;
+    }
 
-.square{
-    width: 90%;
+    .card{
+        margin-bottom: 10px;
+    }
 }
 
-.round{
-    width: 40%;
+
+
+
+
+/* *********
+    5. Footer
+  ************/
+  .about-hr{
+    margin-top: 2%;
+    width: 100%;
+    height: 1px;
+    border: none;
+    border-radius: 5px;
 }
 
 
-/* font */
+
+
+
+/* *********
+    6. Fonts
+  ************/
 h4{
     font-weight: 900;
     font-size: 70px;
@@ -77,9 +156,20 @@ h5{
     font-size: 30px;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 1000px){
+    h4{
+        margin: 0;
+        font-size: 50px;
+    }
+}
 
 
-/* Colors */
+
+
+
+/* *********
+    7. Text colors
+  ************/
 .blue-text{
     color: #E7F3F8;
 }
@@ -97,51 +187,22 @@ h5{
     color: #FCF2F0;
 }
 
-.about-hr{
-    margin-top: 2%;
-    width: 100%;
-    height: 1px;
-    border: none;
-    border-radius: 5px;
+
+
+
+
+/* *********
+    8. Transformation
+  ************/
+.square{
+    width: 90%;
 }
 
-/* Compatibility */
+.round{
+    width: 40%;
+}
 @media screen and (max-width: 1000px){
-    .work-row{
-        flex-direction: column;
-    }
-
-    .card{
-        margin-bottom: 10px;
-    }
-
-    .container-column{
-        height: auto;
-    }
-
-    .container-row{
-        flex-direction: column;
-    }
-
-    .left{
-        margin-left: 0;
-        width: 50%;
-    }
-
-    .right{
-        width: 50%;
-    }
-
-    h4{
-        margin: 0;
-        font-size: 50px;
-    }
-
     .self{
         width: 100%;
     }
-
-    /* .footer{
-        justify-content: flex-start;
-    } */
 }
